@@ -1,4 +1,4 @@
-﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n");
+﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n");
 Console.WriteLine("Enter your choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch (choice)
@@ -18,5 +18,9 @@ switch (choice)
     case 4:
         LogicalPrograms.Reverse rev = new LogicalPrograms.Reverse();
         rev.perform();
+        break;
+    case 5:
+        LogicalPrograms.StopWatch watch = new LogicalPrograms.StopWatch();
+        watch.watch();
         break;
 }
