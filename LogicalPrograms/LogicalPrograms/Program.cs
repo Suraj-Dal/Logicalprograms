@@ -1,4 +1,4 @@
-﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number");
+﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n");
 Console.WriteLine("Enter your choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch (choice)
@@ -14,5 +14,9 @@ switch (choice)
     case 3:
         LogicalPrograms.Prime prime = new LogicalPrograms.Prime();
         prime.check();
+        break;
+    case 4:
+        LogicalPrograms.Reverse rev = new LogicalPrograms.Reverse();
+        rev.perform();
         break;
 }
