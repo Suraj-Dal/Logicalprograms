@@ -1,4 +1,4 @@
-﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number\n7.Day of Week\n");
+﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number\n7.Day of Week\n8.Temperatue Conversion");
 Console.WriteLine("Enter your choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch (choice)
@@ -30,6 +30,10 @@ switch (choice)
     case 7:
         LogicalPrograms.dayOfWeek day = new LogicalPrograms.dayOfWeek();
         day.getDay();
+        break;
+    case 8:
+        LogicalPrograms.Temperature.celToFah();
+        LogicalPrograms.Temperature.FahToCel();
         break;
     default:
         Console.WriteLine("Enter valid option.");
