@@ -1,4 +1,4 @@
-﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number\n7.Day of Week\n8.Temperatue Conversion");
+﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number\n7.Day of Week\n8.Temperatue Conversion\n9.Monthly Payment\n");
 Console.WriteLine("Enter your choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch (choice)
@@ -34,6 +34,9 @@ switch (choice)
     case 8:
         LogicalPrograms.Temperature.celToFah();
         LogicalPrograms.Temperature.FahToCel();
+        break;
+    case 9:
+        LogicalPrograms.monthlyPayment.calculateEMI();
         break;
     default:
         Console.WriteLine("Enter valid option.");
