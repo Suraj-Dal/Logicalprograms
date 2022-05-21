@@ -1,4 +1,5 @@
-﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number\n7.Day of Week\n8.Temperatue Conversion\n9.Monthly Payment\n10.Binary Conversion");
+﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number");
+Console.WriteLine("7.Day of Week\n8.Temperatue Conversion\n9.Monthly Payment\n10.Binary Conversion\n11.Swap Nibbles\n");
 Console.WriteLine("Enter your choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch (choice)
@@ -40,6 +41,9 @@ switch (choice)
         break;
     case 10:
         LogicalPrograms.Binary.getBinary();
+        break;
+    case 11:
+        LogicalPrograms.swapNibbles.swap();
         break;
     default:
         Console.WriteLine("Enter valid option.");
