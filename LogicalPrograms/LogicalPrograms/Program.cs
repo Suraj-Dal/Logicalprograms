@@ -1,4 +1,4 @@
-﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number\n");
+﻿Console.WriteLine("1.Fabonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Stop Watch\n6.Coupon Number\n7.Day of Week\n");
 Console.WriteLine("Enter your choice:");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch (choice)
@@ -26,6 +26,10 @@ switch (choice)
     case 6:
         LogicalPrograms.Coupon coupon = new LogicalPrograms.Coupon();
         coupon.getCoupon();
+        break;
+    case 7:
+        LogicalPrograms.dayOfWeek day = new LogicalPrograms.dayOfWeek();
+        day.getDay();
         break;
     default:
         Console.WriteLine("Enter valid option.");
