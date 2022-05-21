@@ -10,7 +10,7 @@ namespace LogicalPrograms
     {
         public void perfect()
         {
-            int number, sum = 0, n;
+            int number, sum = 0;
             Console.WriteLine("Enter the Number:");
             number = Convert.ToInt32(Console.ReadLine());
             
